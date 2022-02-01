@@ -1,0 +1,298 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+  info [
+    "This demonstration shows a DJI Mavic 2 PRO flying over a rural area."
+    "After the drone has taken off, you can control it with the keyboard of your computer."
+  ]
+  title "DJI Mavic 2 PRO demo"
+  basicTimeStep 8
+  defaultDamping Damping {
+    linear 0.5
+    angular 0.5
+  }
+}
+Viewpoint {
+  orientation 0.49827118989076424 0.3898494990606748 -0.7744308809745274 1.6699586443312104
+  position 19.995326455822838 51.1914962177835 92.66649255880216
+  near 0.2
+  follow "Mavic 2 PRO"
+  followSmoothness 0.2
+}
+TexturedBackground {
+  luminosity 3
+}
+TexturedBackgroundLight {
+}
+Floor {
+  translation -0.07 0 0
+  size 400 400
+  tileSize 6 6
+  appearance Grass {
+  }
+}
+StraightRoadSegment {
+  translation 0 -30 0.03
+  name "road(2)"
+  width 10
+  startingRoadBorderWidth 2
+  length 35
+}
+StraightRoadSegment {
+  translation -1 0 0.03
+  width 10
+  startingRoadBorderWidth 2
+  length 35
+}
+CurvedRoadSegment {
+  translation 34 -15 0.03
+  name "road(1)"
+  width 10
+  curvatureRadius 15
+  totalAngle 3.14
+}
+Windmill {
+  translation -43.8656 -19.8433 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+}
+Windmill {
+  translation -44.258 -27.3356 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+  name "windmill(1)"
+}
+Windmill {
+  translation -46.2448 30.573 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+  name "windmill(2)"
+}
+Windmill {
+  translation -38.75 23.4 0
+  name "windmill(3)"
+}
+SquareManhole {
+  translation 0 0 0.13
+}
+Pine {
+  translation -14.0083 -14.4828 0
+  rotation 0 0 1 2.61799
+}
+Pine {
+  translation -19.6195 -24.3783 0
+  rotation 0 0 1 2.87979
+  name "pine tree(1)"
+}
+Pine {
+  translation -22.0129 6.20205 0
+  name "pine tree(3)"
+}
+Pine {
+  translation -10.6926 -25.1339 0
+  name "pine tree(4)"
+}
+Pine {
+  translation -14.3441 14.5621 0
+  name "pine tree(5)"
+}
+Pine {
+  translation -26.6328 -7.1707 0
+  name "pine tree(6)"
+}
+Pine {
+  translation -9.37029 14.0209 0
+  rotation 0 0 1 -2.6179953071795863
+  name "pine tree(2)"
+}
+Forest {
+  translation 0 0 -0.01
+  shape [
+    200 200
+    200 0
+    50 0
+    50 50
+    -50 50
+    -50 -50
+    50 -50
+    50 0
+    200 0
+    200 -200
+    -200 -200
+    -200 200
+  ]
+  density 0.01
+  type "cherry tree"
+  randomSeed 1
+  maxHeight 12
+  minHeight 6
+  maxRadius 6
+  minRadius 3
+}
+SolidBox {
+  translation 2 -26 0.05
+  size 2 2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://user-images.githubusercontent.com/77744383/152019684-3f2840af-1c2b-4a8c-a076-71eccdfee2b9.png"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 2 -28.5 0
+  name "box(1)"
+  size 2 2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/AMC-IITBHU/Aeronav-Practice-Arena/main/media/QRid5.png?token=GHSAT0AAAAAABQRTYGW6GLUB7CZCZQBNVEIYPZOFQA"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 2 -31.5 0
+  name "box(2)"
+  size 2 2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/AMC-IITBHU/Aeronav-Practice-Arena/main/media/QRid6.png?token=GHSAT0AAAAAABQRTYGXI6EUSPXCU7OLGIC4YPZOGBQ"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 2 -34 0
+  name "box(3)"
+  size 2 2 0.1
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/AMC-IITBHU/Aeronav-Practice-Arena/main/media/QRid7.png?token=GHSAT0AAAAAABQRTYGWRH6YH2NO3KG7XI6SYPZOGPA"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+Mavic2Pro {
+  translation -0.0438275 -0.0192184 0.2
+  rotation 0.10439922130184812 0.35490400883227796 -0.929055405832368 0.01286990994280384
+  controller "my_control"
+  cameraSlot [
+    Camera {
+      width 400
+      height 240
+      near 0.2
+    }
+  ]
+}
+SolidBox {
+  translation 13.86 3.92 0.5
+  name "red"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 31.39 -33.3 0.5
+  name "red(1)"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 40.02 -4.92 0.5
+  name "red(2)"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    roughness 0.5
+    metalness 0
+  }
+}
+Ball {
+  translation 18 -26.51 0.5
+  name "redball"
+  color 1 0 0
+  radius 0.5
+}
+Ball {
+  translation 45.55 -15.74 0.5
+  name "redball(1)"
+  color 1 0 0
+  radius 0.5
+}
+SolidBox {
+  translation 15.41 2.73 0.5
+  name "blue"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 51.52 -9.35 0.5
+  name "blue(1)"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    roughness 0.5
+    metalness 0
+  }
+}
+Ball {
+  translation 31.31 -26.51 0.5
+  name "blueball"
+  color 0 0 1
+  radius 0.5
+}
+SolidBox {
+  translation 30.09 3.28 0.5
+  name "yellow"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 1 1 0
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 49.93 -23.35 0.5
+  name "yellow(1)"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 1 1 0
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 42.46 -27.91 0.5
+  name "cyan"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 0 1 1
+    roughness 0.5
+    metalness 0
+  }
+}
+Ball {
+  translation 23.42 -0.73 0.5
+  name "pinkball"
+  color 1 0 1
+  radius 0.5
+}
