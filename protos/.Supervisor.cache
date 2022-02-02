@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: c0fc7af0bb3b3eb1175797c15745f0d1
+needsRobotAncestor: 0
+baseType: Robot
+slotType: 
+parameters: translation,rotation,scale,children,name,model,description,contactMaterial,immersionProperties,boundingObject,physics,locked,translationStep,rotationStep,radarCrossSection,recognitionColors,controller,controllerArgs,customData,supervisor,synchronization,battery,cpuConsumption,selfCollision,showWindow,window,remoteControl,linearVelocity,angularVelocity,data
+tags: hidden
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: 
+info: Backward\scompatibility\swith\sthe\sdeprecated\s'Supervisor'\snode\s(deprecated\sin\sWebots\sR2018c)

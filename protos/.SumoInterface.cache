@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: 643ba78e93619b9016f72a837d33eb51
+needsRobotAncestor: 0
+baseType: Robot
+slotType: 
+parameters: name,gui,useNetconvert,enableTrafficLights,enableWheelsRotation,maxVehicles,radius,maximumLateralSpeed,maximumAngularSpeed,laneChangeDelay,enableHeight,step,port,seed,networkFiles,sumoArguments,display,verbose,synchronization,children,enableWheelsRoattion,maxVehicules
+tags: 
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: https://www.cyberbotics.com/doc/automobile/sumo-interface
+info: Supervisor\sinterfacing\sSUMO\swith\sWebots

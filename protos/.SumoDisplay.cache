@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: c25d5cbdfa4ccbed371640931ab016a1
+needsRobotAncestor: 1
+baseType: Slot
+slotType: sumo\sdisplay
+parameters: width,height,zoom,refreshRate,fitSize
+tags: 
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: https://www.cyberbotics.com/doc/automobile/sumo-interface
+info: This\sPROTO\sis\smeant\sto\sbe\sinserted\sin\sthe\s'display'\nfield\sof\sthe\s'SumoInterface'\sPROTO
