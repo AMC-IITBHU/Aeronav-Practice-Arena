@@ -12,8 +12,8 @@ WorldInfo {
   }
 }
 Viewpoint {
-  orientation 0.4446887655270827 0.8640960547085214 0.23577512602301245 0.34833489396387657
-  position -47.901137038113475 -6.893818208806151 17.547310888246287
+  orientation 0.5056251878926902 0.8627306446441888 0.006245331080439393 0.32976602838419394
+  position -10.030220279172854 1.7851770771235058 1.8664851407480785
   near 0.2
   follow "Mavic 2 PRO"
   followSmoothness 0.2
@@ -30,13 +30,6 @@ Floor {
   appearance Grass {
   }
 }
-Roundabout {
-  translation 49 -30 0.03
-  rotation 0 0 1 0.785
-  name "roundabout(1)"
-  outerRadius 10
-  startRoadsWidth 10
-}
 StraightRoadSegment {
   translation 0 -30 0.03
   name "road(2)"
@@ -46,6 +39,7 @@ StraightRoadSegment {
 }
 StraightRoadSegment {
   translation -1 0 0.03
+  id "road 1"
   width 10
   startingRoadBorderWidth 2
   length 35
@@ -296,9 +290,10 @@ Ball {
   color 1 0 1
   radius 0.5
 }
-Roundabout {
-  translation 49 0 0.03
-  rotation 0 0 1 0.785
-  outerRadius 10
-  startRoadsWidth 10
+CurvedRoadSegment {
+  translation 34 -15 0.03
+  name "road(1)"
+  width 10
+  curvatureRadius 15
+  totalAngle 3.14
 }

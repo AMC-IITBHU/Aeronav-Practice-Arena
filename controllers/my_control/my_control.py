@@ -111,10 +111,11 @@ class Drone:
         self.front_right_motor.setVelocity(-front_right_motor_input)
         self.rear_left_motor.setVelocity(-rear_left_motor_input)
         self.rear_right_motor.setVelocity(rear_right_motor_input)
-        print(front_left_motor_input, front_right_motor_input, rear_left_motor_input, rear_right_motor_input)
+        
     def get_image(self):
         image=self.camera.getImageArray()
         image=np.array(image,dtype=np.uint8)
+        image = np.flip(image,axis=2)
         return image
         
 
@@ -127,7 +128,7 @@ drone=Drone()
 
 
 i=0
-drone.target_altitude = 15.0
+drone.target_altitude = 20.0
 while drone.robot.step(drone.timestep) != -1:
     i=i+1
     # if(i<20):
@@ -141,13 +142,13 @@ while drone.robot.step(drone.timestep) != -1:
     # print(drone.ds_front.getValue())
     # print(drone.imu.getRollPitchYaw())
     # i+=1
-    # if i%300==0:
-        # image=drone.get_image()
+    if i%100==0:
+        image=drone.get_image()
         
         
-        # cv2.imshow("img",image)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
+        cv2.imshow("img",image)
+        cv2.waitKey(1)
+        cv2.destroyAllWindows()
 
     
     # image=drone.get_image()
