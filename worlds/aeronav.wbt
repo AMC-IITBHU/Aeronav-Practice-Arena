@@ -13,7 +13,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.4511340414180119 -0.8141133921996299 0.36564663449164025 5.842402078414233
-  position -41.54532763405538 -22.909863859486588 24.60594102037543
+  position -36.605551697028154 -23.556088354774957 22.669513136674553
   near 0.2
   follow "Mavic 2 PRO"
   followSmoothness 0.2
@@ -139,7 +139,7 @@ SolidBox {
   appearance PBRAppearance {
     baseColorMap ImageTexture {
       url [
-        "https://raw.githubusercontent.com/AMC-IITBHU/Aeronav-Practice-Arena/main/media/QRid5.png?token=GHSAT0AAAAAABQRTYGW6GLUB7CZCZQBNVEIYPZOFQA"
+        "https://user-images.githubusercontent.com/77744383/152389197-0dc0c15b-c026-4be1-bd74-742aaad2b0ad.png"
       ]
     }
     roughness 0.5
@@ -167,7 +167,7 @@ SolidBox {
   appearance PBRAppearance {
     baseColorMap ImageTexture {
       url [
-        "https://raw.githubusercontent.com/AMC-IITBHU/Aeronav-Practice-Arena/main/media/QRid7.png?token=GHSAT0AAAAAABQRTYGWRH6YH2NO3KG7XI6SYPZOGPA"
+        "https://user-images.githubusercontent.com/77744383/152389807-f7af385c-3f60-4c98-9ac9-e4f82f8884b2.png"
       ]
     }
     roughness 0.5
@@ -175,8 +175,20 @@ SolidBox {
   }
 }
 Mavic2Pro {
-  translation -0.0438275 -0.0192184 0.2
-  rotation 0.10439922130184812 0.35490400883227796 -0.929055405832368 0.01286990994280384
+  hidden position_0_0 -1.3248925601847382e-09
+  hidden linearVelocity_0 5.690938506334848e-07 -9.280820749018011e-09 1.5585543127336434e-05
+  hidden angularVelocity_0 5.773854779235387e-07 3.278819214632159e-05 -2.74848620049138e-08
+  hidden position_6_0 1.5703244831055705
+  hidden linearVelocity_6 1.5550965464332024e-06 -3.0079077257957375e-08 1.1487053671234654e-05
+  hidden angularVelocity_6 5.781421904140266e-07 3.2788184648823906e-05 -3.833149500376472e-08
+  hidden rotation_7 0 1 0 1.5703244831055705
+  hidden position_7_0 2.123620120987729e-10
+  hidden linearVelocity_7 1.4715127433479603e-05 -1.9013329767014594e-07 2.932851562478778e-06
+  hidden angularVelocity_7 6.284522413530443e-05 0.005132764136780817 -3.1867546878564965e-08
+  hidden linearVelocity_8 7.085836565214709e-06 -9.644559003513392e-08 4.709494365698317e-05
+  hidden angularVelocity_8 6.284537293088952e-05 0.005132764143807162 -3.398094918808871e-08
+  translation -0.04619335548103047 -0.0191529644125556 0.2457137042479724
+  rotation -0.005995261614710035 -0.985009899969453 -0.17239360139036347 0.07079019553762639
   controller "my_control"
   cameraSlot [
     Camera {
@@ -217,13 +229,17 @@ SolidBox {
   }
 }
 Ball {
-  translation 18 -26.51 0.5
+  hidden linearVelocity_0 0 0 -1.3137131173395654e-13
+  translation 18 -26.51 0.4999784180000042
+  rotation 0 1 0 0
   name "redball"
   color 1 0 0
   radius 0.5
 }
 Ball {
-  translation 45.55 -15.74 0.5
+  hidden linearVelocity_0 0 0 -1.3137131173395654e-13
+  translation 45.55 -15.74 0.4999784180000042
+  rotation 0 1 0 0
   name "redball(1)"
   color 1 0 0
   radius 0.5
@@ -249,7 +265,9 @@ SolidBox {
   }
 }
 Ball {
-  translation 31.31 -26.51 0.5
+  hidden linearVelocity_0 0 0 -1.3137131173395654e-13
+  translation 31.31 -26.51 0.4999784180000042
+  rotation 0 1 0 0
   name "blueball"
   color 0 0 1
   radius 0.5
@@ -285,7 +303,9 @@ SolidBox {
   }
 }
 Ball {
-  translation 23.42 -0.73 0.5
+  hidden linearVelocity_0 0 0 -1.3137131173395654e-13
+  translation 23.42 -0.73 0.4999784180000042
+  rotation 0 1 0 0
   name "pinkball"
   color 1 0 1
   radius 0.5
