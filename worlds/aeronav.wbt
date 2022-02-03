@@ -12,8 +12,8 @@ WorldInfo {
   }
 }
 Viewpoint {
-  orientation 0.5056251878926902 0.8627306446441888 0.006245331080439393 0.32976602838419394
-  position -10.030220279172854 1.7851770771235058 1.8664851407480785
+  orientation -0.4511340414180119 -0.8141133921996299 0.36564663449164025 5.842402078414233
+  position -41.54532763405538 -22.909863859486588 24.60594102037543
   near 0.2
   follow "Mavic 2 PRO"
   followSmoothness 0.2
@@ -153,7 +153,7 @@ SolidBox {
   appearance PBRAppearance {
     baseColorMap ImageTexture {
       url [
-        "https://raw.githubusercontent.com/AMC-IITBHU/Aeronav-Practice-Arena/main/media/QRid6.png?token=GHSAT0AAAAAABQRTYGXI6EUSPXCU7OLGIC4YPZOGBQ"
+        "https://user-images.githubusercontent.com/77744383/152298859-6d3fc30e-6ec6-47cd-85eb-f96b0099ef1a.png"
       ]
     }
     roughness 0.5
