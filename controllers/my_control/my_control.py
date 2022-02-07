@@ -128,27 +128,25 @@ drone=Drone()
 
 
 i=0
-drone.target_altitude = 20.0
+
 while drone.robot.step(drone.timestep) != -1:
     i=i+1
-    # if(i<20):
-        # drone.move('up',1)
-    drone.move('left',0)
+    if(i<100):
+        drone.move('up',0.1)
     
-    if(drone.gps.getValues()[2] >12):
-        drone.move('forward',1)
-    # else:    
-        # drone.move('forward',1.5)
+    
+    else:    
+        drone.move('forward',1.5)
     # print(drone.ds_front.getValue())
     # print(drone.imu.getRollPitchYaw())
     # i+=1
-    if i%100==0:
-        image=drone.get_image()
+    # if i%100==0:
+        # image=drone.get_image()
         
         
-        cv2.imshow("img",image)
-        cv2.waitKey(1)
-        cv2.destroyAllWindows()
+        # cv2.imshow("img",image)
+        # cv2.waitKey(1)
+        # cv2.destroyAllWindows()
 
     
     # image=drone.get_image()
