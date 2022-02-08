@@ -1,14 +1,14 @@
 # Aeronav-Practice-Arena
 This repository consists of the Practice Arena, for the event  Aeronav'22 being conducted by the Aeromodelling Club, IIT-BHU, Varanasi.
 
-## Event Detail
+
+## Installation instructions
 In the autonomous event we are using Webots simulation.
 
 ![img1](webots.png)
 
 To visit Webots offical site [click here](https://cyberbotics.com/)
 
-## Installation instructions
 ###   Webots installation
 - Download Webots installation file from the links given below:
   - [Windows](https://github.com/cyberbotics/webots/releases/download/R2022a/webots-R2022a_setup.exe)
