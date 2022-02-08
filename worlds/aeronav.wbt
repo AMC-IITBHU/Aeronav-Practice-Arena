@@ -12,8 +12,8 @@ WorldInfo {
   }
 }
 Viewpoint {
-  orientation -0.4511340414180119 -0.8141133921996299 0.36564663449164025 5.842402078414233
-  position -36.605551697028154 -23.556088354774957 22.669513136674553
+  orientation 0.3022360232183357 0.2887115519645431 -0.9084596997288271 1.6636714218480027
+  position 5.174580192964941 84.86616338697246 78.33931702536661
   near 0.2
   follow "Mavic 2 PRO"
   followSmoothness 0.2
@@ -30,8 +30,54 @@ Floor {
   appearance Grass {
   }
 }
+BmwX5 {
+  translation -12.84 2.67 0.4
+  color 0.29 0.33 0.13
+  name "vehicle(4)"
+}
+Truck {
+  translation -9.45 -2.86 0.5
+  color 0.29 0.33 0.13
+  trailer TruckTrailer {
+    mass 100
+    appearance PBRAppearance {
+      baseColor 0.29 0.33 0.13
+      baseColorMap ImageTexture {
+      }
+      roughness 0.4
+      metalness 0
+    }
+  }
+  mass 100
+  name "vehicle(1)"
+}
+Truck {
+  translation -25.43 -2.86 0.6
+  color 0.29 0.33 0.13
+  trailer TruckTrailer {
+    mass 100
+    appearance PBRAppearance {
+      baseColor 0.29 0.33 0.13
+      baseColorMap ImageTexture {
+      }
+      roughness 0.4
+      metalness 0
+    }
+  }
+  mass 100
+  name "vehicle(3)"
+}
+RangeRoverSportSVR {
+  translation -6.46 2.59 0.4
+  color 0.29 0.33 0.13
+}
+RangeRoverSportSVR {
+  translation -19.43 2.72 0.5
+  color 0.29 0.33 0.13
+  name "vehicle(2)"
+}
 StraightRoadSegment {
-  translation 0 -30 0.03
+  translation -1 -30 0.03
   name "road(2)"
   width 10
   startingRoadBorderWidth 2
@@ -39,6 +85,14 @@ StraightRoadSegment {
 }
 StraightRoadSegment {
   translation -1 0 0.03
+  id "road 1"
+  width 10
+  startingRoadBorderWidth 2
+  length 35
+}
+StraightRoadSegment {
+  translation -36 0 0.03
+  name "road(3)"
   id "road 1"
   width 10
   startingRoadBorderWidth 2
@@ -131,6 +185,8 @@ SolidBox {
     roughness 0.5
     metalness 0
   }
+  physics Physics {
+  }
 }
 SolidBox {
   translation 2 -28.5 0
@@ -144,6 +200,8 @@ SolidBox {
     }
     roughness 0.5
     metalness 0
+  }
+  physics Physics {
   }
 }
 SolidBox {
@@ -159,6 +217,8 @@ SolidBox {
     roughness 0.5
     metalness 0
   }
+  physics Physics {
+  }
 }
 SolidBox {
   translation 2 -34 0
@@ -173,20 +233,10 @@ SolidBox {
     roughness 0.5
     metalness 0
   }
+  physics Physics {
+  }
 }
 Mavic2Pro {
-  hidden position_0_0 -1.3248925601847382e-09
-  hidden linearVelocity_0 5.690938506334848e-07 -9.280820749018011e-09 1.5585543127336434e-05
-  hidden angularVelocity_0 5.773854779235387e-07 3.278819214632159e-05 -2.74848620049138e-08
-  hidden position_6_0 1.5703244831055705
-  hidden linearVelocity_6 1.5550965464332024e-06 -3.0079077257957375e-08 1.1487053671234654e-05
-  hidden angularVelocity_6 5.781421904140266e-07 3.2788184648823906e-05 -3.833149500376472e-08
-  hidden rotation_7 0 1 0 1.5703244831055705
-  hidden position_7_0 2.123620120987729e-10
-  hidden linearVelocity_7 1.4715127433479603e-05 -1.9013329767014594e-07 2.932851562478778e-06
-  hidden angularVelocity_7 6.284522413530443e-05 0.005132764136780817 -3.1867546878564965e-08
-  hidden linearVelocity_8 7.085836565214709e-06 -9.644559003513392e-08 4.709494365698317e-05
-  hidden angularVelocity_8 6.284537293088952e-05 0.005132764143807162 -3.398094918808871e-08
   translation -0.04619335548103047 -0.0191529644125556 0.2457137042479724
   rotation -0.005995261614710035 -0.985009899969453 -0.17239360139036347 0.07079019553762639
   controller "my_control"
@@ -229,7 +279,6 @@ SolidBox {
   }
 }
 Ball {
-  hidden linearVelocity_0 0 0 -1.3137131173395654e-13
   translation 18 -26.51 0.4999784180000042
   rotation 0 1 0 0
   name "redball"
@@ -237,11 +286,17 @@ Ball {
   radius 0.5
 }
 Ball {
-  hidden linearVelocity_0 0 0 -1.3137131173395654e-13
   translation 45.55 -15.74 0.4999784180000042
   rotation 0 1 0 0
   name "redball(1)"
   color 1 0 0
+  radius 0.5
+}
+Ball {
+  translation 45.55 -2.57 0.499978
+  rotation 0 1 0 0
+  name "yellowball(2)"
+  color 1 1 0
   radius 0.5
 }
 SolidBox {
@@ -264,8 +319,17 @@ SolidBox {
     metalness 0
   }
 }
+SolidBox {
+  translation 17.59 -31.73 0.5
+  name "blue(2)"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    roughness 0.5
+    metalness 0
+  }
+}
 Ball {
-  hidden linearVelocity_0 0 0 -1.3137131173395654e-13
   translation 31.31 -26.51 0.4999784180000042
   rotation 0 1 0 0
   name "blueball"
@@ -302,11 +366,27 @@ SolidBox {
     metalness 0
   }
 }
+SolidBox {
+  translation 42.46 -0.3 0.5
+  name "cyan(1)"
+  size 1 1 1
+  appearance PBRAppearance {
+    baseColor 0 1 1
+    roughness 0.5
+    metalness 0
+  }
+}
 Ball {
-  hidden linearVelocity_0 0 0 -1.3137131173395654e-13
   translation 23.42 -0.73 0.4999784180000042
   rotation 0 1 0 0
   name "pinkball"
+  color 1 0 1
+  radius 0.5
+}
+Ball {
+  translation 29.71 -28.92 0.499978
+  rotation 0 1 0 0
+  name "pinkball(1)"
   color 1 0 1
   radius 0.5
 }
