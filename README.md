@@ -4,7 +4,7 @@ This repository consists of the Practice Arena, for the event  Aeronav'22 being 
 ## Event Detail
 In the autonomous event we are using Webots simulation.
 
-![img1](amc/webots.png)
+![img1](webots.png)
 
 To visit Webots offical site [click here](https://cyberbotics.com/)
 
