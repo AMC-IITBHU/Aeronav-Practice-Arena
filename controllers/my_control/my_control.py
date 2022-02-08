@@ -116,6 +116,7 @@ class Drone:
         image=self.camera.getImageArray()
         image=np.array(image,dtype=np.uint8)
         image = np.flip(image,axis=2)
+        image = cv2.rotate(image, cv2.cv2.ROTATE_90_CLOCKWISE)
         return image
         
 
@@ -140,13 +141,13 @@ while drone.robot.step(drone.timestep) != -1:
     # print(drone.ds_front.getValue())
     # print(drone.imu.getRollPitchYaw())
     # i+=1
-    # if i%100==0:
-        # image=drone.get_image()
+    if i%300==0:
+        image=drone.get_image()
         
         
-        # cv2.imshow("img",image)
-        # cv2.waitKey(1)
-        # cv2.destroyAllWindows()
+        cv2.imshow("img",image)
+        cv2.waitKey(1)
+        cv2.destroyAllWindows()
 
     
     # image=drone.get_image()
