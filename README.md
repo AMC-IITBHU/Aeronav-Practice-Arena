@@ -39,6 +39,9 @@ You will devise a function on the controller that will take input 2 different RG
  ![image](https://user-images.githubusercontent.com/82452505/153142152-0f7978d1-75bb-478a-8f10-8691a0ffaaee.png)
 - The drone has to be landed on the QR with **id = X**, which was the solution of the equation.
 
+
+The complete problem statement can be found [here](https://github.com/AMC-IITBHU/Aeronav-Practice-Arena/blob/main/AeroNav%202K22.pdf).
+
 ## Drone Specifications:
 - We are using `Dji Mavic 2 pro`, which have a downward facing camera to take images.
 
