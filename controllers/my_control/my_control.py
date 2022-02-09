@@ -28,15 +28,7 @@ class Drone:
         self.compass.enable(self.timestep)
         self.gyro = self.robot.getDevice("gyro")
         self.gyro.enable(self.timestep)
-        # self.ds_front=self.robot.getDevice("ds_front")
-        # self.ds_front.enable(self.timestep)
-        # self.ds_right=self.robot.getDevice("ds_right")
-        # self.ds_right.enable(self.timestep)
-        # self.ds_left=self.robot.getDevice("ds_left")
-        # self.ds_left.enable(self.timestep)
-        # self.ds_bottom=self.robot.getDevice("ds_bottom")
-        # self.ds_bottom.enable(self.timestep)
-       
+        
         self.camera_roll_motor = self.robot.getDevice('camera roll')
         self.camera_pitch_motor = self.robot.getDevice('camera pitch')
 

@@ -12,8 +12,8 @@ WorldInfo {
   }
 }
 Viewpoint {
-  orientation 0.13671795665519176 0.9848744174025127 -0.10644520784934565 0.10960654306174679
-  position -8.351007269717655 0.06918869159063235 2.707302650579987
+  orientation 0.0458402952507467 0.9834080554124055 0.17551998143036476 0.2219635061877627
+  position -10.333652409337049 -0.430024645366929 3.671106352128118
   near 0.2
   follow "Mavic 2 PRO"
   followSmoothness 0.2
@@ -80,13 +80,13 @@ StraightRoadSegment {
   translation -1 -30 0.03
   name "road(2)"
   width 10
-  length 35
+  length 36.2
 }
 StraightRoadSegment {
   translation -1 0 0.03
   id "road 1"
   width 10
-  length 35
+  length 36
 }
 StraightRoadSegment {
   translation -36 0 0.03
@@ -359,7 +359,7 @@ Ball {
   radius 0.5
 }
 CurvedRoadSegment {
-  translation 34 -15 0.03
+  translation 35 -15 0.03
   name "road(1)"
   width 10
   roadBorderHeight 12
