@@ -30,6 +30,15 @@ There will be a world file (.wbt) in this zip file . Teams have to open this wor
 >NOTE:- For any doubts regarding any of the above instruction refer [this link](https://cyberbotics.com/doc/guide/index)
 
 ## Task for the event
+At the beginning of the simulation, your drone must be standing atop the starting platform with its stands in contact with it.
+You will devise a function on the controller that will take input 2 different RGB values(RGB1 and RGB2) at the start which you’ll input on being provided with the colours of our choosing while the drone rests atop the starting platform.Only after manually receiving the 2 RGB values, should the drone take-off from the pad. The task for the event is divided into following subtasks:
+- Fly the drone above a specific height to follow the road and use the camera underneath to count number of boxes and balls of colors **RGB1 and RGB2** respectively.
+- After counting the no. of relevant boxes and obtaining values of RGB1 and RGB2, caluculate value of X using equation:
+  - _**X = | 2 x RGB1 – RGB2 |**_
+- At the end of the track scan all the QR codes each of which contains 3 values; and id and x,y coordinates of the QR.
+- ![image](https://user-images.githubusercontent.com/82452505/153141855-7bee38f5-730e-4dd7-aead-ab53c02cad24.png)
+
+- The drone has to be landed on the QR with **id = X**, which was the solution of the equation.
 
 ## Drone Specifications:
 - We are using `Dji Mavic 2 pro`, which have a downward facing camera to take images.
