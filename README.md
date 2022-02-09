@@ -49,4 +49,5 @@ The complete problem statement can be found [here](https://github.com/AMC-IITBHU
 - To know about the specification of drone refer this [link](https://www.cyberbotics.com/doc/guide/mavic-2-pro?version=develop#mavic2pro-field-summary)
 
 ## Submission instructions
+The submission deadline is **15th February 2022 EOD**.
 Further instruction on submitting the solution will be given soon.
