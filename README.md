@@ -44,3 +44,6 @@ You will devise a function on the controller that will take input 2 different RG
 
 - We have provided basic code with some function and a basic but not perfect control system from drone . Teams could either use these or use their own code. (The provided code is basically for your understanding about how to code in controller).
 - To know about the specification of drone refer this [link](https://www.cyberbotics.com/doc/guide/mavic-2-pro?version=develop#mavic2pro-field-summary)
+
+## Submission instructions
+Further instruction on submitting the solution will be given soon.
