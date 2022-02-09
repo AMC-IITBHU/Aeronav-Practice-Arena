@@ -36,8 +36,7 @@ You will devise a function on the controller that will take input 2 different RG
 - After counting the no. of relevant boxes and obtaining values of RGB1 and RGB2, caluculate value of X using equation:
   - _**X = | 2 x RGB1 – RGB2 |**_
 - At the end of the track scan all the QR codes each of which contains 3 values; and id and x,y coordinates of the QR.
-- ![image](https://user-images.githubusercontent.com/82452505/153141855-7bee38f5-730e-4dd7-aead-ab53c02cad24.png)
-
+ ![image](https://user-images.githubusercontent.com/82452505/153141855-7bee38f5-730e-4dd7-aead-ab53c02cad24.png)
 - The drone has to be landed on the QR with **id = X**, which was the solution of the equation.
 
 ## Drone Specifications:
