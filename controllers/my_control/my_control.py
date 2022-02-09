@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 
 
+
 SIGN = lambda x: int(x>0) - int(x<0)
 CLAMP = lambda value, low, high : min(high, max(value, low))
 
@@ -36,8 +37,6 @@ class Drone:
         # self.ds_bottom=self.robot.getDevice("ds_bottom")
         # self.ds_bottom.enable(self.timestep)
        
-        # keyboard = Keyboard();
-        # keyboard.enable(timestep)
         self.camera_roll_motor = self.robot.getDevice('camera roll')
         self.camera_pitch_motor = self.robot.getDevice('camera pitch')
 
@@ -116,7 +115,8 @@ class Drone:
         image=self.camera.getImageArray()
         image=np.array(image,dtype=np.uint8)
         image = np.flip(image,axis=2)
-        image = cv2.rotate(image, cv2.cv2.ROTATE_90_CLOCKWISE)
+        image = cv2.rotate(image, cv2.ROTATE_90_CLOCKWISE)
+        image = np.fliplr(image)
         return image
         
 
@@ -138,10 +138,11 @@ while drone.robot.step(drone.timestep) != -1:
     
     else:    
         drone.move('forward',1.5)
-    # print(drone.ds_front.getValue())
+        # drone.move('sRight',1.5)
+
     # print(drone.imu.getRollPitchYaw())
-    # i+=1
-    if i%300==0:
+    # print(drone.gps.getValues())
+    if i%100==0:
         image=drone.get_image()
         
         
